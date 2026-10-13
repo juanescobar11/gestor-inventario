@@ -1,0 +1,27 @@
+.producto-form {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 16px;
+
+  &__titulo {
+    margin: 0 0 16px;
+  }
+
+  &__formulario {
+    display: grid;
+    gap: 4px;
+  }
+
+  &__fila {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+  }
+
+  &__acciones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 8px;
+  }
+}

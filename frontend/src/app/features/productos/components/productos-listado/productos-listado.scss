@@ -1,0 +1,61 @@
+.productos {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px;
+
+  &__encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  &__titulo {
+    margin: 0;
+  }
+
+  &__filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  &__alerta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--mat-sys-error, #b3261e);
+  }
+
+  &__tabla-contenedor {
+    overflow-x: auto;
+  }
+
+  &__tabla {
+    width: 100%;
+  }
+
+  &__fila--bajo {
+    background-color: var(--mat-sys-error-container, #fdecea);
+  }
+
+  &__estado {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 500;
+
+    &--bajo {
+      color: var(--mat-sys-error, #b3261e);
+    }
+
+    &--normal {
+      color: var(--mat-sys-tertiary, #2e7d32);
+    }
+  }
+
+  &__vacio {
+    text-align: center;
+    padding: 32px;
+  }
+}
